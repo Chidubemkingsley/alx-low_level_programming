@@ -12,12 +12,12 @@ void error_file(int file_from, int file_to, char *argv[])
 {
 if (file_from == -1)
 {
-dprintf(STDERR_FILENO, "Error: %s\n", argv[1]);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
 if (file_to == -1)
 {
-dprintf(STDERR_FILENO, "Error: %s\n", argv[2]);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
 }
@@ -36,7 +36,7 @@ char buf[1024];
 
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "%s\n", "Usage: ");
+dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 exit(97);
 }
 
@@ -58,14 +58,14 @@ error_file(0, -1, argv);
 err_close = close(file_from);
 if (err_close == -1)
 {
-dprintf(STDERR_FILENO, "Error: %d\n", file_from);
+dprintf(STDERR_FILENO, "Error: Can't close caesar %d\n", file_from);
 exit(100);
 }
 
 err_close = close(file_to);
 if (err_close == -1)
 {
-dprintf(STDERR_FILENO, "Error: %d\n", file_from);
+dprintf(STDERR_FILENO, "Error: Can't close caear %d\n", file_from);
 exit(100);
 }
 return (0);
