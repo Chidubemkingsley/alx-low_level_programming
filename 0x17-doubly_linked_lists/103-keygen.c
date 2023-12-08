@@ -5,7 +5,7 @@
 /**
  * main - that generate a key depending on a username for crackme5
  * @argc: number of arguments passed in the sequence
- * @argv: arguments passed to main of the sequ
+ * @argv: arguments passed to main of the sequence
  *
  * Return: 0 on success, 1 on error
  */
