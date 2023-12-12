@@ -2,24 +2,24 @@
 
 
 /**
-  * main - this actually shows the main printing funtion of the integer
-  * less than 4000000. of the integer
-  * Return: 0 of the particular integer
+  * main - the main printing funtion
+  * less than 4000000.
+  * Return: 0.
   */
 
 
 int main(void)
 {
 	int i = 0;
-	long l = 1, m = 2, sum = m;
+	long j = 1, k = 2, sum = k;
 
 
-	while (l + m < 4000000)
+	while (k + j < 4000000)
 	{
-		l += m;
-		if (l % 2 == 0)
-		sum += m;
-		l = m - l;
+		k += j;
+		if (k % 2 == 0)
+		sum += k;
+		j = k - j;
 		++i;
 	}
 	printf("%ld", sum);
