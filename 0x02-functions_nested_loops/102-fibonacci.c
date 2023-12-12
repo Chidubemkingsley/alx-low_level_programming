@@ -24,7 +24,7 @@ int main(void)
 		}
 		sum = l + m;
 		l = m;
-		l = sum;
+		m = sum;
 	}
 
 	return (0);
