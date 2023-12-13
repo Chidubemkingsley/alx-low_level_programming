@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P .. https://raw.githubusercontent.com/Chidubemkingsley/alx-low_level_programming/master/0x18-dynamic_libraries/libtest.so
-export LD_PRELOAD="$PWD/../libtest.so"
+wget -P /tmp/ https://raw.github.com/Chidubemkingsley/alx-low_level_programming/master/0x18-dynamic_libraries/libtest.so
+export LD_PRELOAD=/tmp/libtest.so
